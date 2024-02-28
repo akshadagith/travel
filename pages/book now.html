@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Book Now</title>
+   <link rel="stylesheet" href="../css/temples.css">
+   <style type="text/css">
+      body {
+         background-color: #ebf9f2;
+
+      }
+
+      body {
+         font-family: 'Poppins', sans-serif;
+         margin: 0;
+         padding: 0;
+
+      }
+
+      .header {
+
+         color: #fa3917;
+         text-align: center;
+         padding: 0;
+      }
+
+      section {
+         max-width: 600px;
+         margin: 80px auto;
+         padding: 20px;
+         border-radius: 8px;
+         box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+         background:  #fff;
+         backdrop-filter: blur(50px);
+      }
+
+      label {
+         display: block;
+         margin-bottom: 8px;
+         font-weight: bold;
+      }
+
+      input,
+      select {
+         width: 100%;
+         padding: 8px;
+         margin-bottom: 16px;
+         box-sizing: border-box;
+      }
+
+      input {
+         border-radius: 10px;
+         background: hsl(240, 70%, 96%);
+      }
+
+      button {
+         background-color: #fa3917;
+         color: #fff;
+         padding: 0 20px;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+      }
+
+      button:hover {
+         background-color: #f14527;
+      }
+
+      .java-scr {
+         display: flex;
+         flex-direction: row;
+         margin-top: 10px;
+         justify-content: space-evenly;
+         height: 30px;
+      }
+
+      #quantity {
+         font-size: 30px;
+         font-weight: bold;
+         margin-top: 0px;
+      }
+
+      .submit button {
+         display: block;
+         margin: 30px auto 0 auto;
+         padding: 10px 40px;
+      }
+      @media screen and (max-width: 600px) {
+         section {
+         margin: 20px auto;
+         width: 380px;
+      }
+      }
+   </style>
+</head>
+
+<body>
+   <nav style="position: relative;">
+      <div class="brand-name">
+         <img src="../images/logo.png">
+      </div>
+      <ul id="sideMenu">
+         <li><a href="../index.html">Home</a></li>
+         <li><a href="./temples.html">Category ▼</a>
+            <ul class="tour-dropdown">
+               <li><a href="./temples.html">Temples</a></li>
+               <li><a href="./beaches.html">Beaches</a></li>
+               <li><a href="./hill-stations.html">Hill Stations</a></li>
+               <li><a href="./history.html">Historical</a></li>
+               <li><a href="./wateractivities.html">Water activities</a></li>
+               <li><a href="./hiking.html">Hiking</a></li>
+            </ul>
+         </li>
+         <li><a href="./about.html">About</a></li>
+         <li><a href="./contact.html">Contact</a></li>
+         <li><a href="./login.html">Login</a></li>
+         <li><a href="./book now.html">Book Tour</a></li>
+         <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+   </nav>
+
+   <section>
+      <div class="header">
+         <h1>Book Your Tours</h1>
+      </div>
+
+      <form id="bookingForm">
+         <label for="tourName">Tour Name:</label>
+         <input type="text" id="tourName" name="tourName" placeholder="Enter Tour Name Here..." required>
+
+         <label for="fullName">Your Full Name:</label>
+         <input type="text" id="fullName" name="fullName" placeholder="Write Your Name Here..." required>
+
+         <label for="email">Your Email Address:</label>
+         <input type="email" id="email" name="email" placeholder="Write Your Email Here...">
+
+         <label for="tourDate">What is Tour Date:</label>
+         <input type="date" id="tourDate" name="tourDate" placeholder="Date" required>
+
+         <label for="email">Your Phone Number:</label>
+         <input type="number" id="number" name="number" placeholder="Write Your Number Here...">
+         <span style="font-weight: bold;">Number Of Ticket You Want To Book : </span>
+
+         <div class="java-scr">
+            <button type="button" onclick="quantityIncrease()">Add Ticket</button>
+            <p class="quantity" id="quantity">0</p>
+            <button type="button" onclick="quantityDecrease()">Remove Ticket</button>
+         </div>
+
+         <div class="submit">
+            <button type="submit" class="btn" onclick="submitForm()">SUBMIT</button>
+         </div></br>
+      </form>
+   </section>
+
+
+   <script src="../js/book_now.js"></script>
+   <script src="https://kit.fontawesome.com/4a24678c16.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
