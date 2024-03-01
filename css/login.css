@@ -10,7 +10,7 @@
   background-position: center;
   background-size: cover;
   position: relative;
-  background-color: #d9dad9;
+  background-color: #d8dedd;
   color: #fa3917;
 }
 .form-box{
@@ -20,7 +20,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  background: #c9c6c6;;
+  background: #f1f7f5;;
   padding: 50px 60px 70px;
   text-align: center;
   border-radius: 35px;
@@ -34,7 +34,7 @@
 }
 
 .input-field{
-  background: #eeeeee;
+  background: #f1d6d6;
   margin: 15px 0;
   border-radius: 25px;
   display: flex;
@@ -61,7 +61,7 @@ input{
 }
 .input-field img{
   margin-left: 15px;
-  color: #999;
+  color: #e1caca;
 }
 form p{
   text-align: left;
